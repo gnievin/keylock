@@ -1,0 +1,37 @@
+KeyLock
+27 May 86 by Garrett Nievin
+
+KeyLock is a program to try to help physically handicapped persons to use a PC.
+For someone who can only hit one key at a time, key sequences like control-C or
+alt-F1 or ctrl-alt-delete become impossible.  This program changes the ctrl,
+alt, and the left shift keys into locking keys, much like the num lock or caps
+lock keys.  The program is run as follows:
+
+Keylock/option      (no space before slash!)
+
+no option   Brings up a little help and explanation screen.  Nothing else
+/I /i        Install KeyLock
+/S /s        Put KeyLock to sleep - keyboard works normally again
+/W /w        Wake KeyLock back up - keys are now locks again
+
+any other options or options entered at the wrong time (like /s with no /i
+beforehand) will bring up the same help screen.
+
+
+To change the keys used as locks, 2 areas of the program must be changed:
+
+1. The label "numkeys" must reflect the number of keys handled by the program -
+currently 3, for ctrl, alt, and left-shift.
+
+2. The table "scancodes" must contain the scancodes for the keys to be recognized
+as locks.  Also, this table must always follow table "keyflags" in memory, or
+other logic must also be changed.
+
+Feel free to use and distribute this program, and please send any suggestions
+or changes to me on the Telstar BBS in San Antonio (512) 822-8882 or:
+
+Garrett Nievin
+4518 Valley Brook Dr.
+San Antonio, TX 78238
+
+Thank you.
